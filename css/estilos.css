@@ -18,6 +18,7 @@ h1 strong {
 h2 {
   font-weight: bold;
   font-size: 24px;
+  margin: 0;
 }
 
 h3, h4, h5, h6 {
@@ -33,7 +34,7 @@ h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 200px;
+  height: 150px;
   padding: 0 20px;
 }
 
@@ -48,8 +49,16 @@ figure {
   margin: 0;
 }
 
+figure img {
+  height: 150px;
+}
+
 .menu { /* .menu hereda de .header */
   height: inherit;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -.2px;
 }
 
 .header ol { /* .header ol hereda de .menu */
@@ -71,38 +80,90 @@ figure {
 }
 
 .hero {
-  height: 300px;
-  background-color: #F5F7F9;
-  background-ra: ;
-  margin: 50px;
-  padding: 50px;
+  height: 500px;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .experience {
-  margin: 50px;
-  padding: 50px;
+  padding: 100px;
+  background-color: #F5F7F9;
 }
 
-.ability {
-  margin: 50px;
-  padding: 50px;
+.experience strong {
+  color: #545454;
 }
 
-.projects {
-  margin: 50px;
-  padding: 50px;
-  width: 500px;
-  display: inline-block;
+.project {
+  margin: 50px 0;
 }
 
-.projects_description {
-  margin: 50px;
-  padding: 50px;
-  width: 500px;
-  display: inline-block;
+.project_title,
+.project_date,
+.project_url {
+  margin: 10px 0;
+}
+
+.project_description {
+  margin: 10px 0;
+  margin-bottom: 0;
+}
+
+.project_details {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.project_text {
+  margin: 10px 0;
+  width: 800px;
+}
+
+.project_events {
+  margin: 10px 10px;
+  margin-left: 0;
+  width: 250px;
+}
+
+.abilities {
+  padding: 100px;
+}
+
+.coding {
+  padding: 100px;
+  background-color: #F5F7F9;
 }
 
 .contact {
-  margin: 50px;
-  padding: 50px;
+  padding: 100px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social {
+}
+
+.social-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  background-size: 50px 50px;
+}
+
+.social-link.github {
+  background-image: url('../images/github.svg');
+}
+
+.social-link.twitter {
+  background-image: url('../images/twitter.svg');
+}
+
+.social-link.instagram {
+  background-image: url('../images/instagram.svg');
 }
