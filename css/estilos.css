@@ -8,7 +8,7 @@ h1 {
   line-height: 1.5;
   letter-spacing: -.2px;
   margin: 0;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 h1 strong {
@@ -81,10 +81,14 @@ figure img {
 
 .hero {
   height: 500px;
-  padding: 100px;
+  padding: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.hero img {
+  height: 400px;
 }
 
 .experience {
@@ -145,19 +149,24 @@ figure img {
   justify-content: space-between;
 }
 
-.social {
-}
-
 .social-link {
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin: 0 10px;
-  background-size: 50px 50px;
+  background-size: 40px 40px;
 }
 
 .social-link.github {
   background-image: url('../images/github.svg');
+}
+
+.social-link.platzi {
+  background-image: url('../images/platzi.svg');
+}
+
+.social-link.linkedin {
+  background-image: url('../images/linkedin.svg');
 }
 
 .social-link.twitter {
@@ -166,4 +175,46 @@ figure img {
 
 .social-link.instagram {
   background-image: url('../images/instagram.svg');
+}
+
+.email_form input {
+  border-color: #545454;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 20px 10px 25px;
+  background-image: url('../images/envelope.svg');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+  font-size: 16px;
+}
+
+.email_form button {
+  display: block;
+  margin-top: 10px;
+  background: transparent;
+  color: #000;
+  width: 100px;
+  padding: 10px 0;
+  margin-top: 10px;
+  border-radius: 5px;
+  border-color: #545454;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  font-size: 16px;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
 }
