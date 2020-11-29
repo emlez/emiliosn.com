@@ -1,5 +1,5 @@
 body {
-  font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Inter", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   margin: 0;
 }
 
@@ -117,19 +117,18 @@ figure img {
 }
 
 .project_details {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 25% 75%;
 }
 
 .project_text {
   margin: 10px 10px;
-  width: 800px;
+  /* width: inherit; */
 }
 
 .project_events {
   margin: 10px 10px;
-  width: 250px;
+  /* width: 300px; */
 }
 
 .abilities {
