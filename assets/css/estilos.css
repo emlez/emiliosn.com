@@ -1,0 +1,225 @@
+body {
+  font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: -.2px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+h1 strong {
+  color: #545454;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+}
+
+h3, h4, h5, h6 {
+  color: #545454;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+
+.header {
+  background-color: #F5F7F9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+  padding: 0 20px;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+figure {
+  margin: 0;
+}
+
+figure img {
+  height: 150px;
+}
+
+.menu { /* .menu hereda de .header */
+  height: inherit;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -.2px;
+}
+
+.header ol { /* .header ol hereda de .menu */
+  display: flex;
+  height: inherit;
+}
+
+.header ol li { /* .header ol li hereda de .header ol */
+  height: inherit;
+}
+
+.header a { /* .header a hereda de .header ol li */
+  color: black;
+  text-decoration: none;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.hero {
+  height: 500px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero img {
+  height: 400px;
+}
+
+.experience {
+  padding: 100px;
+  background-color: #F5F7F9;
+}
+
+.experience strong {
+  color: #545454;
+}
+
+.project {
+  margin: 50px 0;
+  border: 1px solid #545454;
+  border-radius: 10px;
+}
+
+.project_title,
+.project_date,
+.project_url {
+  margin: 10px 10px;
+}
+
+.project_description {
+  margin: 10px 10px;
+}
+
+.project_details {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.project_text {
+  margin: 10px 10px;
+  width: 800px;
+}
+
+.project_events {
+  margin: 10px 10px;
+  width: 250px;
+}
+
+.abilities {
+  padding: 100px;
+}
+
+.coding {
+  padding: 100px;
+  background-color: #F5F7F9;
+}
+
+.contact {
+  padding: 100px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact h1 {
+  margin-bottom: 20px;
+  /* display: inline; */
+}
+
+.social {
+}
+
+.social-link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  background-size: 40px 40px;
+}
+
+.social-link.github {
+  background-image: url('../images/github.svg');
+}
+
+.social-link.platzi {
+  background-image: url('../images/platzi.svg');
+}
+
+.social-link.linkedin {
+  background-image: url('../images/linkedin.svg');
+}
+
+.social-link.twitter {
+  background-image: url('../images/twitter.svg');
+}
+
+.social-link.instagram {
+  background-image: url('../images/instagram.svg');
+}
+
+.email_form input {
+  border-color: #545454;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 20px 10px 25px;
+  background-image: url('../images/envelope.svg');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+
+.email_form button {
+  display: block;
+  margin-top: 10px;
+  background: transparent;
+  color: #000;
+  width: 100px;
+  padding: 10px 0;
+  margin-top: 10px;
+  border-radius: 5px;
+  border-color: #545454;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
